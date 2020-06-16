@@ -1,0 +1,655 @@
+/* ========= { START RESPONSE ON SMALL DEVICES } =========*/
+
+@media screen and (min-width: 300px) and (max-width: 550px) {
+
+/* ========= { START NAVBARE } =========*/
+
+nav .nav-container, 
+nav .navbar-container {
+    position: absolute;
+    background: #FFF;
+    top: 3em;
+    z-index: 4;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+nav .nav-container {
+    top: 8px;
+    right: 0;
+}
+
+nav .navbar-brand .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-top: 3px;
+    background: #555;
+}
+
+nav .navbar-container {
+    background: #FFF;
+    transition: .3s;
+    width: 100%;
+    height: 0;
+}
+
+.nav-container .nav-links {
+    width: 100%;
+    background: #FFF
+}
+
+nav .container .nav-links ul {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -2em;
+}
+
+nav .container .nav-links ul li {
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.search-container {
+    width: 100%;
+    position: relative;
+    top: -1em;
+    margin: auto;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+.fixed-nav {
+    position: unset;
+    animation: slide 0.7s;
+}
+
+/* ========= { END NAVBARE } =========*/
+
+/* ========= { START HEADER } =========*/
+
+header {
+    height: 400px;
+}
+
+header::after {
+    height: 400px;
+}
+
+header .header-desc {
+    left: 0;
+    padding: 10px;
+}
+
+header .header-desc p:first-of-type { font-size: 24px; }
+
+header .header-desc p:nth-of-type(2) { font-size: 18px; }
+
+/* ========= { END HEADER } =========*/
+
+/* ========= { START MARKETPLACE } =========*/
+
+.market-place .marketplace-container {
+    grid-template-columns: repeat(1,280px);
+    grid-gap: 35px 0;
+}
+
+/* ========= { END MARKETPLACE } =========*/
+
+/* ========= { START OFERE } =========*/
+
+.offer .offer-container {
+    display: block;
+}
+
+.offer .offer-container
+.offer-img img {
+    height: 200px;
+}
+
+.offer .offer-container
+.offer-img,
+.offer .offer-container 
+.offer-info {
+    width: 100%;
+    padding: 10px;
+}
+
+.offer-container .offer-info
+.offer-item {
+    width: 100%;
+    margin-left: -20px;
+}
+
+.offer-container .offer-info
+.offer-item p {
+    margin-top: 19px;
+}
+
+/* ========= { END OFERE } =========*/
+
+/* ========= { START TESTIMONIAL } =========*/
+
+.carousel-item .carousel-item-container {
+    display: block;
+}
+
+.carousel-item .carousel-item-container
+.carousel-info {
+    height: 200px;
+}
+
+.carousel-item .carousel-item-container
+.carousel-info p {
+    text-align: center;
+    margin: 0;
+    font-size: 17px;
+}
+
+.carousel-item .carousel-item-container
+.carousel-img ,
+.carousel-item .carousel-item-container
+.carousel-info {
+    width: 100%;
+}
+
+.carousel-item .carousel-item-container
+.carousel-img {
+    height: 198px;
+}
+
+.carousel-control-prev {
+    width: 0;
+    left: 1em;
+}
+
+.carousel-control-next {
+    right: -4em;
+}
+
+.carousel-info p {
+    text-align: center;
+    font-size: 14px;
+    margin: 5em 0;
+    width: 100%;
+    padding: 5px;
+}
+
+/* ========= { END TESTIMONIAL } =========*/
+
+/* ========= { START GET STARTED } =========*/
+
+.login {
+    height: 250px;
+}
+
+.login .login-container {
+    margin-left: 0;
+}
+
+/* ========= { START GET STARTED } =========*/
+
+/* ========= { START FOOTER } =========*/
+
+footer .footer-container {
+    display: block
+}
+
+footer .footer-container 
+.site-social-media {
+    justify-content: center;
+}
+
+/* ========= { END FOOTER } =========*/
+
+}
+
+@media screen and (min-width: 551px) and (max-width: 650px) {
+
+/* ========= { START NAVBARE } =========*/
+
+
+nav .nav-container, 
+nav .navbar-container {
+    position: absolute;
+    background: #FFF;
+    top: 3em;
+    z-index: 4;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+nav .nav-container {
+    top: 8px;
+    right: 0;
+}
+
+nav .navbar-brand .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-top: 3px;
+    background: #555;
+}
+
+nav .navbar-container {
+    background: #FFF;
+    transition: .3s;
+    width: 100%;
+    height: 0;
+}
+
+.nav-container .nav-links {
+    width: 100%;
+    background: #FFF
+}
+
+nav .container .nav-links ul {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -2em;
+}
+
+nav .container .nav-links ul li {
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.search-container {
+    width: 100%;
+    position: relative;
+    top: -1em;
+    margin: auto;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+.fixed-nav {
+    position: unset;
+    animation: slide 0.7s;
+}
+
+/* ========= { END NAVBARE } =========*/
+
+/* ========= { START HEADER } =========*/
+
+header {
+    height: 400px;
+}
+
+header::after {
+    height: 400px;
+}
+
+header .header-desc {
+    left: 0;
+    padding: 10px;
+}
+
+header .header-desc p:first-of-type { font-size: 24px; }
+
+header .header-desc p:nth-of-type(2) { font-size: 18px; }
+
+/* ========= { END HEADER } =========*/
+
+/* ========= { START MARKETPLACE } =========*/
+
+.market-place .marketplace-container {
+    grid-template-columns: repeat(2,260px);
+    grid-gap: 35px 15px;
+}
+
+/* ========= { END MARKETPLACE } =========*/
+
+/* ========= { START OFERE } =========*/
+
+.offer .offer-container {
+    display: block;
+}
+
+.offer .offer-container
+.offer-img img {
+    height: 200px;
+}
+
+.offer .offer-container
+.offer-img,
+.offer .offer-container 
+.offer-info {
+    width: 100%;
+    padding: 10px;
+}
+
+.offer-container .offer-info
+.offer-item {
+    width: 100%;
+    margin-left: -20px;
+}
+
+.offer-container .offer-info
+.offer-item p {
+    margin-top: 19px;
+}
+
+/* ========= { END OFERE } =========*/
+
+/* ========= { START TESTIMONIAL } =========*/
+
+.carousel-item .carousel-item-container {
+    display: block;
+}
+
+.carousel-item .carousel-item-container
+.carousel-info {
+    height: 200px;
+}
+
+.carousel-item .carousel-item-container
+.carousel-info p {
+    text-align: center;
+    margin: 0;
+    font-size: 17px;
+    transform: translateY(50px)
+}
+
+.carousel-item .carousel-item-container
+.carousel-img ,
+.carousel-item .carousel-item-container
+.carousel-info {
+    width: 100%;
+}
+
+.carousel-item .carousel-item-container
+.carousel-img {
+    height: 198px;
+}
+
+.carousel-control-prev {
+    width: 0;
+    left: 1em;
+}
+
+.carousel-control-next {
+    right: -4em;
+}
+
+.carousel-info p {
+    text-align: center;
+    font-size: 14px;
+    margin: 5em 0;
+    width: 100%;
+    padding: 5px;
+}
+
+/* ========= { END TESTIMONIAL } =========*/
+
+/* ========= { START GET STARTED } =========*/
+
+.login {
+    height: 200px;
+}
+
+.login .login-container {
+    margin-left: 0;
+}
+
+/* ========= { START GET STARTED } =========*/
+
+}
+
+
+/* ========= { END RESPONSE ON SMALL DEVICES } =========*/
+
+/* ========= { START RESPONSE ON LARGE DEVICES } =========*/
+
+@media screen and (min-width: 651px) and (max-width: 950px) {
+
+/* ========= { START NAVBARE } =========*/
+
+
+nav .nav-container, 
+nav .navbar-container {
+    position: absolute;
+    background: #FFF;
+    top: 3em;
+    z-index: 4;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+nav .nav-container {
+    top: 8px;
+    right: 0;
+}
+
+nav .navbar-brand .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-top: 3px;
+    background: #555;
+}
+
+nav .navbar-container {
+    background: #FFF;
+    transition: .3s;
+    width: 100%;
+    height: 0;
+}
+
+.nav-container .nav-links {
+    width: 100%;
+    background: #FFF
+}
+
+nav .container .nav-links ul {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -2em;
+}
+
+nav .container .nav-links ul li {
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.search-container {
+    width: 100%;
+    position: relative;
+    top: -1em;
+    margin: auto;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+.fixed-nav {
+    position: unset;
+    animation: slide 0.7s;
+}
+
+/* ========= { END NAVBARE } =========*/
+
+/* ========= { START HEADER } =========*/
+
+header {
+    height: 400px;
+}
+
+header::after {
+    height: 400px;
+}
+
+header .header-desc {
+    left: 0;
+    padding: 10px;
+}
+
+header .header-desc p:first-of-type { font-size: 24px; }
+
+header .header-desc p:nth-of-type(2) { font-size: 18px; }
+
+/* ========= { END HEADER } =========*/
+
+/* ========= { START MARKETPLACE } =========*/
+
+.market-place .marketplace-container {
+    grid-template-columns: repeat(2,280px);
+    grid-gap: 35px;
+}
+
+/* ========= { END MARKETPLACE } =========*/
+
+/* ========= { START OFERE } =========*/
+
+.offer .offer-container
+.offer-img {
+    align-self: center;
+}
+
+.offer .offer-container
+.offer-img img {
+    height: 250px;
+    width: 90%;
+}
+
+/* ========= { END OFERE } =========*/
+
+/* ========= { START TESTIMONIAL } =========*/
+
+.carousel-info p {
+    text-align: center;
+    font-size: 16px;
+    margin: 5em 0;
+    width: 100%;
+    padding: 5px;
+}
+
+/* ========= { END TESTIMONIAL } =========*/
+
+/* ========= { START GET STARTED } =========*/
+
+.login {
+    height: 200px;
+}
+
+.login .login-container {
+    margin-left: 0;
+}
+
+/* ========= { START GET STARTED } =========*/
+
+}
+
+
+@media screen and (min-width: 951px) and (max-width: 1200px) {
+
+/* ========= { START NAVBARE } =========*/
+
+.nav-container {
+    max-width: unset;
+}
+
+nav .navbar-container {
+    width: 85%;
+}
+
+/* ========= { END NAVBARE } =========*/
+
+/* ========= { START HEADER } =========*/
+
+header {
+    height: 400px;
+}
+
+header::after {
+    height: 400px;
+}
+
+header .header-desc {
+    left: 0;
+    padding: 10px;
+}
+
+header .header-desc p:first-of-type { font-size: 24px; }
+
+header .header-desc p:nth-of-type(2) { font-size: 18px; }
+
+/* ========= { END HEADER } =========*/
+
+/* ========= { START MARKETPLACE } =========*/
+
+.market-place .marketplace-container {
+    grid-template-columns: repeat(2,280px);
+    grid-gap: 35px;
+}
+
+/* ========= { END MARKETPLACE } =========*/
+
+/* ========= { START OFERE } =========*/
+
+.offer .offer-container
+.offer-img {
+    align-self: center;
+}
+
+.offer .offer-container
+.offer-img img {
+    height: 250px;
+    width: 90%;
+}
+
+/* ========= { END OFERE } =========*/
+
+/* ========= { START GET STARTED } =========*/
+
+.login {
+    height: 200px;
+}
+
+.login .login-container {
+    margin-left: 0;
+}
+
+/* ========= { START GET STARTED } =========*/
+
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1250px) {
+
+.nav-container {
+    max-width: unset;
+}
+
+nav .navbar-container {
+    width: 85%;
+}
+
+.market-place .marketplace-container {
+    grid-template-columns: repeat(4,280px);
+    grid-gap: 20px;
+}
+
+}
+
+/* ========= { START RESPONSE ON LARGE DEVICES } =========*/
