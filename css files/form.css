@@ -1,0 +1,204 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #F1F1F1;
+}
+
+/* ====== { START NAVBARE } ====== */
+
+nav .navbar-brand span {
+    font-weight: 500;
+}
+
+nav .navbar-brand span:first-of-type {
+    color: #41CE44;
+}
+
+/* ====== { END NAVBARE } ====== */
+
+/* ====== { START FORM } ====== */
+
+.form-container {
+    overflow: hidden;
+    margin-top: 5em;
+}
+
+.form {
+    width: 500px;
+    padding: 10px 10px 25px 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.form .form-input {
+    width: 300px;
+    margin: auto;
+}
+
+.form .form-input img {
+    width: 20px;
+    margin-top: 2px;
+    margin-right: 5px;
+    margin-left: 3px;
+    float: left;
+}
+
+.form .form-input input[type="email"],
+.form .form-input input[type="password"],
+.form .form-input input[type="text"] {
+    width: 77%;
+    border: none;
+    outline: none;
+    padding: 1px;
+}
+
+.form .form-input input[type="email"] {
+    width: 55%;
+}
+
+
+.form .form-input .pass-input {
+    width: 80%;
+}
+
+.form .form-input:nth-child(3) img:nth-of-type(3) {
+    cursor: pointer;
+}
+
+.form button {
+    width: 300px;
+    margin-top: 15px;
+}
+
+.form-container .form span {
+    font-size: 14px;
+    color: #ff0000;
+}
+
+/* ====== { END FORM } ====== */
+
+/* ========= { START GET STARTED } =========*/
+
+.login {
+    height: 200px;
+}
+
+.login .login-container {
+    position: relative;
+    text-align: center;
+    top: 3em;
+    margin-left: 2em;
+    color: #555;
+}
+
+/* ========= { END GET STARTED } =========*/
+
+/* ========= { START FOOTER } =========*/
+
+footer {
+    position: relative;
+    margin-bottom: 0;
+    background: #567;
+    padding: 15px;
+}
+
+footer .footer-container {
+    display: flex;
+}
+
+footer .footer-container
+.site-title span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer .footer-container
+.site-title span:first-of-type {
+    color: #41CE44;
+}
+
+footer .footer-container 
+.site-social-media img {
+    width: 25px;
+    height: 25px;
+}
+
+/* ========= { END FOOTER } =========*/
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+
+.form-container {
+    width: 100%;
+    background: #FFF;
+}
+
+.form {
+    width: 100%;
+    padding: 10px 5px 25px 5px;
+}
+
+.form .form-input {
+    width: 98%;
+}
+
+.form button {
+    width: 90%;
+    margin-top: 15px;
+}
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 479px) {
+
+.form-container {
+    width: 100%;
+    background: #FFF;
+}
+
+.form {
+    width: 90%;
+    padding: 10px 5px 25px 5px;
+}
+
+.form .form-input {
+    width: 98%;
+}
+
+.form button {
+    width: 90%;
+    margin-top: 15px;
+}
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 548px) {
+
+.login {
+    height: 280px;
+}
+
+
+.login .login-container {
+    margin-left: 0;
+    padding: 6px;
+}
+
+.login .login-container h4 {
+    font-size: 19px;
+}
+
+footer .footer-container {
+    display: block;
+}
+
+
+.site-title {
+    display: flex;
+    justify-content: center;
+}
+
+footer .site-social-media {
+    justify-content: center;
+}
+
+}
