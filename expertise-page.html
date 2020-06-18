@@ -19,10 +19,91 @@
                 <span>Work</span><span>flow</span>
             </a>
         </div>
+        <p class="nav-item m-0" style="font-size: 17px; color: #555"></p>
     </nav>
 
-<!--------{ START NAVBARE }---------->
+<!--------{ END NAVBARE }---------->
 
+<!--------{ START FIRST STEP (EXPERTISE) }---------->
+
+    <main class="expertise">
+        <div class="expertise-container bg-white shadow-sm">
+            <div class="expertise-header p-4 bg-light">
+                <p>Expertise</p>
+            </div>
+            <div class="expertise-body p-4">
+                <p>Tell us about the work you do</p>
+                <div class="expertise-body-container">
+                    <p>What is the main service you offer ?</p>
+                    <div class="dropdown">
+                        <button class="btn dropdown-arrow dropdownMenuButton" data-toggle="dropdown">Categories</button>
+                        <div class="dropdown-menu">
+                            <li class="dropdown-item inline-item" style="cursor: pointer;">Web, Mobile & Software Dev</li>
+                            <li class="dropdown-item inline-item" style="cursor: pointer;">Design & Motion graphic</li>                            
+                        </div>
+                    </div>
+                    <div class="category-container mt-4">
+                        <div class="category-details">
+                        </div>
+                        <div class="options-work-container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="expertise-footer p-4">
+                <button class="btn text-info shadow-none">Back</button>
+                <button class="btn bg-info text-white shadow-none">Next</button>                
+            </div>
+        </div>
+    </main>
+
+<!--------{ END FIRST STEP (EXPERTISE) }---------->
+
+<!-- Button trigger modal -->
+<button class="d-none show-modal" data-toggle="modal" data-target="#exampleModal">
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="color: #ff0000">Sorry !</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Please chose 4 types of work.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--------{ START FOOTER }---------->
+
+    <footer class="footer">
+        <div class="footer-container justify-content-between mt-4">
+            <div class="site-title text-white d-flex">
+                <span>Work</span><span>flow</span>
+                <p class="ml-2">&copy; Workflow international Ltd 2020</p>
+            </div>
+            <div class="site-social-media d-flex">
+                <a href="https://www.twitter.com" class="mr-3"><img src="icons/twitter.png"></a>
+                <a href="https://www.facebook.com" class="mr-3"><img src="icons/face.png"></a>
+                <a href="https://www.linkedin.com" class="mr-3"><img src="icons/linked.png"></a>
+                <a href="https://www.instagram.com" class="mr-3"><img src="icons/insta.png"></a>
+            </div>
+        </div>
+    </footer>
+
+<!--------{ END FOOTER }---------->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="javaScript files/expertise-page.js"></script>
 </body>
 </html>
