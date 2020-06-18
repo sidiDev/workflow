@@ -47,10 +47,14 @@ sumbitBtn.onclick = function() {
             }
 
             localStorage.setItem('userInfo', JSON.stringify(userInfo))
+            window.location = 'expertise-page.html';
     }
 
 }
 
+/* Check if the name is > 15 chars show message
+   else if the name is < 4 chars show message
+*/
 function checkName(nameInput) {
 
     if (nameInput.value.length > 15) {
@@ -67,6 +71,7 @@ function checkName(nameInput) {
     }
 }
 
+// Check if the password is < 8 chars show message
 function checkPass(passInput) {
     
     if (passInput.value.length < 8) {
@@ -79,6 +84,9 @@ function checkPass(passInput) {
     }
 }
 
+/* Check if the email contain @gmail.com show message
+   else if the email input is emapty show message
+*/
 function checkEmail(passInput) {
 
     let eml = '@gmail.com';
