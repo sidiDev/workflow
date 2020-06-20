@@ -154,9 +154,6 @@ nav .navbar-brand span:first-of-type {
 /* ========= { START FOOTER } =========*/
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     background: #567;
     padding: 15px;
 }
