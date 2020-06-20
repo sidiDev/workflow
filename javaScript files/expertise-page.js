@@ -83,7 +83,7 @@ function theCheckedInArray(getCheckboxs) {
                 let checked = getCheckboxs[i].parentElement.childNodes[3].textContent;
                 workType.push(checked)
                 localStorage.setItem('userExpertise',JSON.stringify(workType));
-                window.location = 'expertise-level-page.html';
+                window.location = 'languages-page.html';
 
             }
 
@@ -118,7 +118,7 @@ function nextStep() {
             document.querySelector('.show-modal').click();
     
         } else {
-            window.location = 'expertise-level-page.html';
+            window.location = 'languages-page.html';
         }
     }
 }

@@ -5,7 +5,7 @@ let showHidePass = document.querySelector('.show-hide-pass');
 let getInputs = document.querySelectorAll('.form input')
 
 //Get spans
-let getSpans = document.querySelectorAll('.form span');
+let getSpans = document.querySelectorAll('.span');
 
 // Email output
 let emailOutput = document.querySelector('.email-output');
@@ -37,7 +37,7 @@ sumbitBtn.onclick = function() {
     checkEmail(getInputs[1])
     checkPass(getInputs[2])
 
-    if (getSpans[0].textContent == '' && getSpans[2].textContent == '' && 
+    if (getSpans[0].textContent == '' && getSpans[1].textContent == '' && 
         getInputs[1].textContent == '' && emailOutput.textContent == '') {
 
             let userInfo = {

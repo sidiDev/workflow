@@ -1,0 +1,188 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #F1F1F1;
+}
+
+nav .navbar-brand span {
+    font-weight: 500;
+}
+
+nav .navbar-brand span:first-of-type {
+    color: #41CE44;
+}
+
+/* ========= { START FIRST STEP (EXPERTISE) } =========*/
+
+.expertise .expertise-container {
+    width: 650px;
+    margin: 5em auto;
+}
+
+.expertise .expertise-container
+.expertise-header p {
+    font-size: 26px;
+}
+
+.expertise-body-container
+.dropdowns {
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+
+.expertise-body-container
+.dropdowns .hide-dropdown,
+.expertise-body-container
+.dropdowns .hide-add-btn {
+    display: none;
+}
+
+.keyword-item {
+    padding: 0;
+}
+
+.langs-container .langs-details {
+    width: 590px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.langs-container .langs-details
+.lang-speaker {
+    margin: 5px;
+}
+
+.dropdown .dropdown-arrow {
+    position: relative;
+    padding: 10px 30px 10px 30px;
+    border: solid 2px #F1F1F1;
+    box-shadow: 2px -1px 10px 0px #F1F1F1;
+}
+
+.dropdown .dropdown-arrow:after {
+    position: absolute;
+    content: '';
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: transparent transparent #17a2b8 #17a2b8;
+    transform: rotate(-45deg);
+    right: 8px;
+    top: 15px;
+}
+
+/* ========= { END FIRST STEP (EXPERTISE) } =========*/
+
+/* ========= { START FOOTER } =========*/
+
+footer {
+    background: #567;
+    padding: 15px;
+    margin-top: 5em;
+}
+
+footer .footer-container {
+    display: flex;
+}
+
+footer .footer-container
+.site-title span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer .footer-container
+.site-title span:first-of-type {
+    color: #41CE44;
+}
+
+footer .footer-container 
+.site-social-media img {
+    width: 25px;
+    height: 25px;
+}
+
+/* ========= { END FOOTER } =========*/
+
+@media screen and (min-width: 300px) and (max-width: 445px) {
+
+.expertise .expertise-container {
+    width: 100%;
+    margin: 5em auto;
+}
+
+.expertise-body-container
+.dropdowns {
+    display: block;
+}
+
+.dropdowns .dropdown {
+    margin-top: 10px;
+}
+
+.dropdowns .dropdown button,
+.add-button button {
+    width: 200px;
+    margin-top: 5px;
+}
+
+.langs-container .langs-details {
+    width: 200px;
+    display: block;
+}
+
+}
+
+@media screen and (min-width: 446px) and (max-width: 678px) {
+
+.expertise .expertise-container {
+    width: 100%;
+    margin: 5em auto;
+}
+
+.expertise-body-container
+.dropdowns {
+    grid-template-columns: repeat(2,1fr);
+}
+
+.dropdowns .dropdown {
+    margin-top: 10px;
+}
+
+.dropdowns .dropdown button,
+.add-button button {
+    width: 200px;
+    margin-top: 5px;
+}
+
+.langs-container .langs-details {
+    width: 90%;
+    display: flex;
+}
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 348px) {
+
+nav .nav-item {
+    display: none;
+}
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 548px) {
+
+footer .footer-container {
+    display: block;
+}
+
+
+.site-title {
+    display: flex;
+    justify-content: center;
+}
+
+footer .site-social-media {
+    justify-content: center;
+}
+
+}
