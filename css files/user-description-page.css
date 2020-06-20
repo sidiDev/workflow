@@ -1,0 +1,159 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #F1F1F1;
+}
+
+nav .navbar-brand span {
+    font-weight: 500;
+}
+
+nav .navbar-brand span:first-of-type {
+    color: #41CE44;
+}
+
+/* ========= { START (USER DECRIPTION) } =========*/
+
+.user-desc .user-desc-container {
+    width: 600px;
+    margin: 3em auto;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form span:first-of-type,
+.input-form span:nth-of-type(2) {
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #555;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form input{
+    width: 500px;
+    margin-top: 15px;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form textarea {
+    width: 500px;
+    height: 150px;
+    resize: none;
+    margin-top: 10px;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form:nth-child(2) span:nth-of-type(2) {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ========= { END (USER DECRIPTION) } =========*/
+
+/* ========= { START FOOTER } =========*/
+
+footer {
+    background: #567;
+    padding: 15px;
+    margin-top: 5em;
+}
+
+footer .footer-container {
+    display: flex;
+}
+
+footer .footer-container
+.site-title span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer .footer-container
+.site-title span:first-of-type {
+    color: #41CE44;
+}
+
+footer .footer-container 
+.site-social-media img {
+    width: 25px;
+    height: 25px;
+}
+
+/* ========= { END FOOTER } =========*/
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+
+/* ========= { START (USER DECRIPTION) } =========*/
+
+.user-desc .user-desc-container {
+    width: 100%;
+    margin: 3em auto;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form input{
+    width: 90%;
+    margin-top: 15px;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form textarea {
+    width: 90%;
+}
+
+/* ========= { END (USER DECRIPTION) } =========*/
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 639px) {
+
+
+/* ========= { START (USER DECRIPTION) } =========*/
+
+.user-desc .user-desc-container {
+    width: 100%;
+    margin: 3em auto;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form input{
+    width: 400px;
+    margin-top: 15px;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form textarea {
+    width: 400px;
+}
+
+/* ========= { END (USER DECRIPTION) } =========*/
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 348px) {
+
+nav .nav-item {
+    display: none;
+}
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 548px) {
+
+footer .footer-container {
+    display: block;
+}
+
+
+.site-title {
+    display: flex;
+    justify-content: center;
+}
+
+footer .site-social-media {
+    justify-content: center;
+}
+
+}

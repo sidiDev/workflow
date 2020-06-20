@@ -123,26 +123,24 @@ let langLevelArray = [];
 // Get ADD button
 let addButton = document.querySelector('.add-button button');
 
-let counter = -1 ;
-
 // When click add button add language and level in lang-speaker container
 addButton.onclick = () => {
-
-    counter++;
 
     if (dropdownTitle.textContent != 'Languages' && dropdownTitlelevel.textContent != 'Lang level') {
 
         let langSpeakerItems = document.querySelectorAll('.lang-speaker');
         if (langSpeakerItems.length == 3) {
 
-            addBtn.remove();
+            addBtn.classList.add('d-none');
             langsDetails.innerHTML +=
             `
             <div class="lang-speaker bg-light p-2 text-dark rounded" style="background: #F1F1F1;">
-                <button class="close float-left outline-none" dataset="${counter}" style="margin: -8px 0; outline: none">&times;</button>
+                <button class="close float-left outline-none" style="margin: -8px 0; outline: none">&times;</button>
                 <span class="ml-2">${dropdownTitle.textContent}</span> - <span class="ml-1">${ dropdownTitlelevel.textContent}</span>
             </div>
             `
+            langLevelArray.push(`${dropdownTitle.textContent} - ${ dropdownTitlelevel.textContent}`);
+
             let deleteBtn = document.querySelectorAll('.lang-speaker button');
 
             deleteKeyWord(deleteBtn,langLevelArray);
@@ -152,7 +150,7 @@ addButton.onclick = () => {
             langsDetails.innerHTML +=
             `
             <div class="lang-speaker bg-light p-2 text-dark rounded" style="background: #F1F1F1;">
-                <button class="close float-left outline-none" dataset="${counter}" style="margin: -8px 0; outline: none">&times;</button>
+                <button class="close float-left outline-none" style="margin: -8px 0; outline: none">&times;</button>
                 <span class="ml-2">${dropdownTitle.textContent}</span> - <span class="ml-1">${ dropdownTitlelevel.textContent}</span>
             </div>
             `
@@ -163,21 +161,25 @@ addButton.onclick = () => {
         }
     }
 
-    checkLangsDetails()
+    let langs = langLevelArray.filter((items) => {
+        return items != null;
+    })
+
+    checkLangsDetails(langs)
 }
 
 // Get next button
 let nextBtn = document.querySelectorAll('.expertise-footer button')
 
 //When click on next check if langsDetails contain items if it's contain save languages in local storage
-function checkLangsDetails() {
+function checkLangsDetails(langLevarr) {
 
     nextBtn[1].onclick = () => {
 
-        if (langsDetails.innerHTML != '') {
+        if (langsDetails.childElementCount >= 1) {
 
-            localStorage.setItem('languages',JSON.stringify(langLevelArray));
-            window.location = 'profile-photo-page.html';
+            localStorage.setItem('languages',JSON.stringify(langLevarr));
+            window.location = 'user-description-page.html';
 
         } else {
 
@@ -191,17 +193,30 @@ checkLangsDetails()
 
 // when click button close of keyword delete keyword 
 function deleteKeyWord(keyword,langsLevelArray) {
-    
-    for (let i = 0; i < keyword.length; i++) {
 
-        keyword[i].onclick = function() {
+    keyword.forEach((item,index) => {
 
-            let getKeywordNum = this.getAttribute('dataset');
+        item.onclick = function() {
             
             this.parentElement.remove();
-            let langsLeveDeleted = delete langsLevelArray[getKeywordNum];
-            langLevelArray.push(langsLeveDeleted);
-            console.log(getKeywordNum)
+            delete langsLevelArray[index];
+            let langs = langsLevelArray.filter((items) => {
+                return items != null;
+            })
+
+            let langSpeakerItems = document.querySelectorAll('.lang-speaker');
+            if (langSpeakerItems.length > 0) {
+
+                addBtn.classList.remove('d-none');                
+            }
+    
+            
+            checkLangsDetails(langs);
         }
-    }
+    })
+}
+
+// When click back button transfer user to back page
+nextBtn[0].onclick = function() {
+    window.location = 'expertise-page.html';
 }
