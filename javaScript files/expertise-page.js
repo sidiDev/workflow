@@ -1,7 +1,7 @@
 // create Object contain type of work for categories
 
 let categories = {
-    'Web, Mobile & Software Dev': ['Desktop Software','Game Development','Software Development','Mobile Development','Web Development','Product management'],
+    'Web, Mobile & Software Dev': ['Desktop Dev','Game Dev','Software Dev','Mobile Dev','Web Dev','Product management'],
     'Design & Motion graphic': ['Web designer','Mobile Designer','Game Designer','Logo Designer','Video Editor','Motion Designer']
 }
 
@@ -47,7 +47,7 @@ function showCategories(category) {
         document.querySelector('.category-details').innerHTML =
         `
             <p style="font-weight: 500">What type of ${category} do you do ?</p>
-            <p style="color: #555">Select up to 4 types of work.</p>
+            <p style="color: #555">Select 4 types of work.</p>
         `
 
         categoryContainer.innerHTML +=
@@ -82,9 +82,14 @@ function theCheckedInArray(getCheckboxs) {
 
                 let checked = getCheckboxs[i].parentElement.childNodes[3].textContent;
                 workType.push(checked)
-                localStorage.setItem('userExpertise',JSON.stringify(workType));
-                window.location = 'languages-page.html';
 
+                if (workType.length > 4) {
+                    document.querySelector('.show-modal').click();
+
+                } else {
+                    localStorage.setItem('userExpertise',JSON.stringify(workType));
+                    window.location = 'languages-page.html';    
+                }
             }
 
         }

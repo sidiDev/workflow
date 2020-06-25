@@ -1,0 +1,661 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #F1F1F1;
+}
+
+/* ========= { START NAVBARE } =========*/
+
+nav .navbar-container {
+    width: 80%;
+}
+
+nav .navbar-brand span {
+    font-weight: 500;
+}
+
+nav .navbar-brand span:first-of-type {
+    color: #41CE44;
+}
+
+.nav-container .search-container {
+    width: 300px;
+}
+
+nav .container .nav-links ul {
+    display: flex;
+}
+
+nav .container .nav-links ul li {
+    margin-left: 20px;
+}
+
+nav .container .nav-links ul li a {
+    color: #555;
+    cursor: pointer;
+}
+
+.fixed-nav {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    top: 0;
+    animation: slide-down 0.7s;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+nav .navbar-options-container {
+    position: absolute;
+    top: 3.6em;
+    left: 0;
+    background: #FFF;
+    width: 100%;
+}
+
+nav .navbar-options-container
+.navbar-options ul {
+    display: flex;
+    margin: auto;
+}
+
+.dropdown-menu li {
+    cursor: pointer;
+}
+
+nav .navbar-options-container
+.navbar-options ul .column {
+    padding: 10px;
+}
+
+.navbar-options-container
+.button-active-desactive
+.active-container {
+    transition: .2s;    
+    position: absolute;
+    background: #DDD;
+    margin: 5px 7px;
+    width: 32px;
+    height: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button-active-desactive
+.active-container .active-btn {
+    top: 1px;
+    left: 1.1px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: .3s;
+    background: #FFF;
+}
+
+.navbar-options-container
+.button-active-desactive .container-active {
+    background: #17a2b8;
+    transition: .2s;
+}
+
+.button-active-desactive
+.active-container .active {
+    left: 14.1px;
+    transition: .3s;
+}
+
+/* ========= { END NAVBARE } =========*/
+
+/* ========= { START PROJECTS PREVIEW } =========*/
+
+.projects-section-container {
+    width: 100%;
+    margin-top: 6em;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.projects-section
+.add-projects-section span:first-of-type {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+}
+
+.project-details .project-title{
+    word-break: break-word;
+}
+
+.projects-section
+.add-projects-section span:nth-of-type(2) {
+    cursor: pointer;
+    user-select: none;
+    width: 29px;
+    height: 29px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 20px;
+    box-shadow: 0px 0px 3px 2px rgb(236, 236, 236);
+}
+
+.projects {
+    display: grid;
+    grid-gap: 14px 30px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.projects
+.project-container {
+    position: relative;
+    border: solid 2px #F1F1F1;
+    cursor: pointer;
+}
+
+.projects
+.project-container img {
+    width: 100%;
+    height: 190px;
+}
+
+.projects
+.project-container
+.project-details {
+    padding: 0 8px 0 20px;
+    margin-top: auto;
+    margin-bottom: 0 auto;
+}
+
+.projects
+.project-container
+.project-details span:first-of-type {
+    font-weight: 500;
+}
+
+.projects
+.project-container
+.project-details span {
+    display: block;
+    margin-top: 4px;
+}
+
+/* ========= { END PROJECTS PREVIEW } =========*/
+
+
+/* ========= { START FOOTER } =========*/
+
+footer {
+    background: #567;
+    padding: 15px;
+    margin-top: 5em;
+}
+
+footer .footer-container {
+    display: flex;
+}
+
+footer .footer-container
+.site-title span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer .footer-container
+.site-title span:first-of-type {
+    color: #41CE44;
+}
+
+footer .footer-container 
+.site-social-media img {
+    width: 25px;
+    height: 25px;
+}
+
+/* ========= { END FOOTER } =========*/
+
+
+/* ========= { START RESPONSE ON SMALL DEVICES } =========*/
+
+@media screen and (min-width: 300px) and (max-width: 612px) {
+
+/* ========= { START NAVBARE } =========*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+}
+
+nav .nav-container, 
+nav .navbar-container {
+    position: absolute;
+    background: #FFF;
+    top: 3.4em;
+    z-index: 4;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+nav .nav-container {
+    top: 8px;
+    right: 0;
+}
+
+nav .navbar-brand .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-top: 3px;
+    background: #555;
+}
+
+nav .navbar-container {
+    background: #FFF;
+    transition: .3s;
+    width: 100%;
+    height: 0;
+}
+
+.nav-container .nav-links {
+    width: 100%;
+    background: #FFF
+}
+
+nav .container .nav-links ul {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -2em;
+}
+
+nav .container .nav-links ul li {
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.search-container {
+    width: 100%;
+    position: relative;
+    top: -1em;
+    margin: auto;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+.fixed-nav {
+    position: fixed;
+    animation: none 0.7s;
+}
+
+
+nav .navbar-options-container {
+    position: fixed;
+    top: 3.8em;
+    left: -15em;
+    width: 240px;
+    height: 100%;
+    transition: .3s;
+}
+
+nav .navbar-options-container
+.navbar-options ul {
+    display: block;
+    padding: 0;
+    margin: 2em auto;
+}
+
+.navbar-options-container
+.menu-btn {
+    position: fixed;
+    cursor: pointer;
+    top: 20em;
+    left: 5px;
+    background: #FFF;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: .3s;    
+}
+
+.navbar-options-container
+.menu-btn span {
+    display: block;
+    width: 21px;
+    height: 3px;
+    margin-top: 2px;
+    background: #17a2b8;
+    transform: translate(6px, 8px);
+}
+
+.navbar-options-container
+.menuBarBtn {
+    transition: .3s;    
+    left: 14em;
+}
+
+nav .menuBar {
+    transition: .3s;    
+    left: 0;
+}
+
+/* ========= { END NAVBARE } =========*/
+
+
+/* ========= { START PROJECTS PREVIEW } =========*/
+
+.projects-section-container {
+    margin-top: 6em;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.projects {
+    width: 100%;
+    grid-gap: 14px 0;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.projects
+.project-container {
+    position: unset;
+    width: 280px;
+    margin: auto;
+}
+
+/* ========= { END PROJECTS PREVIEW } =========*/
+
+/* ========= { START FOOTER } =========*/
+
+footer .footer-container {
+    display: block
+}
+
+footer .footer-container 
+.site-social-media {
+    justify-content: center;
+}
+
+/* ========= { END FOOTER } =========*/
+
+}
+
+
+@media screen and (min-width: 613px) and (max-width: 865px) {
+
+/* ========= { START NAVBARE } =========*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+}
+
+nav .nav-container, 
+nav .navbar-container {
+    position: absolute;
+    background: #FFF;
+    top: 3.4em;
+    z-index: 4;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+nav .nav-container {
+    top: 8px;
+    right: 0;
+}
+
+nav .navbar-brand .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-top: 3px;
+    background: #555;
+}
+
+nav .navbar-container {
+    background: #FFF;
+    transition: .3s;
+    width: 100%;
+    height: 0;
+}
+
+.nav-container .nav-links {
+    width: 100%;
+    background: #FFF
+}
+
+nav .container .nav-links ul {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -2em;
+}
+
+nav .container .nav-links ul li {
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.search-container {
+    width: 100%;
+    position: relative;
+    top: -1em;
+    margin: auto;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+.fixed-nav {
+    position: fixed;
+    animation: none 0.7s;
+}
+
+
+nav .navbar-options-container {
+    position: fixed;
+    top: 3.8em;
+    left: -15em;
+    width: 240px;
+    height: 100%;
+    transition: .3s;
+}
+
+nav .navbar-options-container
+.navbar-options ul {
+    display: block;
+    padding: 0;
+    margin: 2em auto;
+}
+
+.navbar-options-container
+.menu-btn {
+    position: fixed;
+    cursor: pointer;
+    top: 20em;
+    left: 5px;
+    background: #FFF;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: .3s;    
+}
+
+.navbar-options-container
+.menu-btn span {
+    display: block;
+    width: 21px;
+    height: 3px;
+    margin-top: 2px;
+    background: #17a2b8;
+    transform: translate(6px, 8px);
+}
+
+.navbar-options-container
+.menuBarBtn {
+    transition: .3s;    
+    left: 14em;
+}
+
+nav .menuBar {
+    transition: .3s;    
+    left: 0;
+}
+
+/* ========= { END NAVBARE } =========*/
+
+
+/* ========= { START PROJECTS PREVIEW } =========*/
+
+.projects-section-container {
+    margin-top: 6em;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.projects {
+    width: 100%;
+    grid-gap: 14px 0;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.projects
+.project-container {
+    position: unset;
+    margin: auto;
+}
+
+/* ========= { END PROJECTS PREVIEW } =========*/
+
+/* ========= { START FOOTER } =========*/
+
+footer .footer-container {
+    display: block
+}
+
+.site-title {
+    justify-content: center;
+}
+
+footer .footer-container 
+.site-social-media {
+    justify-content: center;
+}
+
+/* ========= { END FOOTER } =========*/
+
+}
+
+
+@media screen and (min-width: 866px) and (max-width: 991px) {
+
+/* ========= { START NAVBARE } =========*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+}
+
+.fixed-nav {
+    position: fixed;
+    animation: none 0.7s;
+}
+
+
+nav .navbar-options-container {
+    position: fixed;
+    top: 3.8em;
+    left: -15em;
+    width: 240px;
+    height: 100%;
+    transition: .3s;
+}
+
+nav .navbar-options-container
+.navbar-options ul {
+    display: block;
+    padding: 0;
+    margin: 2em auto;
+}
+
+.navbar-options-container
+.menu-btn {
+    position: fixed;
+    cursor: pointer;
+    top: 20em;
+    left: 5px;
+    background: #FFF;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: .3s;    
+}
+
+.navbar-options-container
+.menu-btn span {
+    display: block;
+    width: 21px;
+    height: 3px;
+    margin-top: 2px;
+    background: #17a2b8;
+    transform: translate(6px, 8px);
+}
+
+.navbar-options-container
+.menuBarBtn {
+    transition: .3s;    
+    left: 14em;
+}
+
+nav .menuBar {
+    transition: .3s;    
+    left: 0;
+}
+
+/* ========= { END NAVBARE } =========*/
+
+
+/* ========= { START PROJECTS PREVIEW } =========*/
+
+.projects-section-container {
+    margin-top: 6em;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.projects {
+    width: 100%;
+    grid-gap: 14px 0;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.projects
+.project-container {
+    position: unset;
+    margin: auto;
+}
+
+/* ========= { END PROJECTS PREVIEW } =========*/
+
+}
+
+/* ========= { END RESPONSE ON SMALL DEVICES } =========*/

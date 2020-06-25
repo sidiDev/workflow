@@ -1,0 +1,172 @@
+// Get navbar links
+let navContainer = document.querySelector('.navbar-container')
+let navContainer_2 = document.querySelector('.nav-container')
+
+// Get navbar
+let navbar = document.querySelector('nav');
+
+// When window scroll > 20 add class in navbar
+window.onscroll = function() {
+    navContainer.classList.remove('open-close-nav');
+    navContainer_2.classList.remove('open-close-nav'); 
+
+    if (this.scrollY > 100) {
+        navbar.classList.add('fixed-nav');
+        navbar.classList.add('shadow');
+
+    } else {
+        navbar.classList.remove('fixed-nav');
+        navbar.classList.remove('shadow');
+    }
+}
+
+function openClose() {
+    navContainer.classList.toggle('open-close-nav');
+    navContainer_2.classList.toggle('open-close-nav');    
+}
+
+// Get menu bar element and button
+let menuBarBtn = document.querySelector('.navbar-options-container .menu-btn')
+let menuBar = document.querySelector('nav .navbar-options-container');
+
+menuBarBtn.onclick = function() {
+
+    this.classList.toggle('menuBarBtn')
+    menuBar.classList.toggle('menuBar')
+}
+
+// Get Profile photo element and imageUrl from local storage
+let imageUrl = document.querySelector('.profile-photo')
+let getImageUrl = localStorage.getItem('imageUrl');
+
+// If getImageUrl if exist add image link in imageUrl
+if (getImageUrl) {
+
+    imageUrl.src = getImageUrl;
+}
+
+// Get active container elements
+let activeContainer = document.querySelectorAll('.active-container');
+
+for (let i = 0; i < activeContainer.length; i++) {
+
+    activeContainer[i].onclick = function() {
+
+        this.children[0].classList.toggle('active');
+        this.classList.toggle('container-active')
+    }
+}
+
+// Get dropdown menu items
+let dropdownItems = document.querySelectorAll('.dropdown-menu li');
+
+for (let i = 0; i < dropdownItems.length; i++) {
+
+    dropdownItems[i].onclick = function() {
+        
+        this.parentElement.parentElement.children[0].textContent = this.textContent;
+    }
+}
+
+function searchFunc() {
+
+// Get services available element
+let servicesAvailable = document.querySelector('.services-available');
+
+// Get search input element
+let searchInput = document.querySelector('.search-input');
+
+// Get search button element
+let searchBtn = document.querySelector('.search-button')
+
+// Get projects titles elements
+let projectsTitles = document.querySelectorAll('.project-title');
+
+// Get all products element
+let productsItems = document.querySelectorAll('.projects .project-container');
+
+servicesAvailable.innerHTML = `${projectsTitles.length} Services available`
+
+    searchBtn.onclick = () => {
+
+        let numOfSeviceAl = [];
+    
+        if (searchInput.value.length > 2) {
+    
+            let searchValue = searchInput.value.toLowerCase();
+            
+            for (let i = 0; i < projectsTitles.length; i++) {
+    
+                let projects_titles = projectsTitles[i].textContent.toLowerCase();
+    
+                if (projects_titles.includes(searchValue) == true) {
+
+                    numOfSeviceAl.push(i);
+                    projectsTitles[i].parentElement.parentElement.classList.add('d-block');
+                    servicesAvailable.innerHTML = `${numOfSeviceAl.length} Services available`;
+                    
+                } else {
+
+                    projectsTitles[i].parentElement.parentElement.classList.add('d-none');
+
+                }
+            }
+        }
+    }
+    
+}
+
+// Get user projects form local storage
+var getUserProjects = localStorage.getItem('projectDetails')
+
+// Get user projects container
+let projectsContainer = document.querySelector('.projects');
+
+// Check if Project is exist from local storage if it's exist add in projectsContainer
+if (getUserProjects) {
+
+    getUserProjects = JSON.parse(getUserProjects);
+
+    for(let i = 0; i < getUserProjects.length; i++) {
+
+        let projectTitle = getUserProjects[i].title;
+        var projectTitleEdited = projectTitle.slice(0,60);
+        projectTitleEdited += '...'
+        
+        projectsContainer.innerHTML += `
+        <div class="project-container">
+                <img src="${getUserProjects[i].imgUrl}">
+                <div class="project-details">
+                    <span class="project-title d-block" style="height: 50px;">${projectTitleEdited}</span>
+                    <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                    <span class="d-block" style="font-weight: 500">Price: $${getUserProjects[i].price}</span>
+                    <div>
+                   <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                    <span class="d-inline" style="color:#ffc201">0</span>
+                    <span class="d-inline">(0)</span>
+                </div>                     
+                </div>
+            </div>
+        </div>
+        `
+
+    }
+
+}
+
+searchFunc()
+
+// Get projects titles elements
+let projectsTitles = document.querySelectorAll('.project-title');
+
+for (let i = 0; i < projectsTitles.length; i++) {
+
+    if (projectsTitles[i].textContent.length > 60) {
+
+        let ptsTitles = projectsTitles[i].textContent.slice(0,55);
+        
+        projectsTitles[i].textContent = ptsTitles;
+        projectsTitles[i].textContent += '...'
+
+    }
+}

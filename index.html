@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css files/home-page.css">
+    <title>workflow</title>
+
+</head>
+<body>
+   
+
+<!--------{ START NAVBARE }---------->
+    <nav class="navbar bg-white w-100">
+        <div class="navbar-brand">
+            <div class="menu-btn float-left mt-1 d-inline-block" style="cursor: pointer;" onclick="openClose()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="index.html" class="text-decoration-none text-dark ml-3">
+                <span>Work</span><span>flow</span>
+            </a>
+        </div>
+        <div class="navbar-container">
+        <div class="container nav-container">
+            <div class="search-container">
+                <div class="input-group">
+                    <input type="text" class="form-control shadow-none search-input" placeholder="Enter your search">
+                    <button class="btn btn-outline-info shadow-none ml-1 search-button">Search</button>
+                </div>
+            </div>
+            <div class="nav-links">
+                <ul class="list-inline m-0 p-0">
+                    <li class="nav-item"><a href="#" class="text-decoration-none">Home</a></li>
+                    <li class="nav-item"><a href="#" class="text-decoration-none">Inbox</a></li>
+                    <li class="nav-item"><a href="#" class="text-decoration-none">Manage Request</a></li>
+                    <li class="nav-item"><a class="text-decoration-none">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="user-profile-photo">
+        <span class="border rounded-circle border d-block" style="width:45px;height:45px;">
+            <img src="" class="w-100 h-100 rounded-circle profile-photo">
+        </span>
+    </div>
+    <div class="navbar-options-container column border-top">
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>            
+        </div>
+        <div class="navbar-options container">
+            <ul>
+                <div class="dropdown column">
+                    <button class="btn border shadow-none dropdown-toggle" data-toggle="dropdown">Service Options</button>
+                <div class="dropdown-menu">
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>                        
+                </div>
+                </div>
+
+                <div class="dropdown column">
+                    <button class="btn border shadow-none dropdown-toggle" data-toggle="dropdown">Seller Details</button>
+                <div class="dropdown-menu">
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>                        
+                </div>
+                </div>
+
+                <div class="dropdown column">
+                    <button class="btn border shadow-none dropdown-toggle" data-toggle="dropdown">Delivery Time</button>
+                <div class="dropdown-menu">
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>                        
+                </div>
+                </div>
+
+                <div class="button-active-desactive mt-1 d-flex column">
+                    <div class="position-relative" style="width: 45px">
+                        <div class="active-container">
+                             <span class="active-btn rounded-circle position-absolute"></span>
+                        </div>
+                    </div>
+                    <span style="color: #555;font-weight:500">Online Sellers</span>
+                </div>
+
+                <div class="button-active-desactive mt-1 d-flex column">
+                    <div class="position-relative" style="width: 45px">
+                        <div class="active-container">
+                             <span class="active-btn rounded-circle position-absolute"></span>
+                        </div>
+                    </div>
+                    <span style="color: #555;font-weight:500">Pro Services</span>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+<!--------{ END NAVBARE }---------->
+
+<!--------{ START PROJECTS PREVIEW }---------->
+
+    <main class="projects-section-container">
+        <div class="projects-section bg-white p-3">
+            <span class="mt-3 d-block services-available" style="color: #555;font-size: 17px;font-weight:500"></span>
+            <div class="projects mt-3">
+                <div class="project-container">
+                        <img src="images/img-1.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will do python bots scraper automatorrs and more</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $50</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">2.5</span>
+                            <span class="d-inline">(50)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-2.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your designer and Full stack developer</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $500</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.5</span>
+                            <span class="d-inline">(120)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-3.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">Create a professional website for you with html and Css and js</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $100</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.2</span>
+                            <span class="d-inline">(120)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-4.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will design you a logo or banner for your youtube channel or FB page</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $10</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">5.0</span>
+                            <span class="d-inline">(620)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-5.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be help your business to expand your activity</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $90</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">2.5</span>
+                            <span class="d-inline">(25)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-6.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your designer and Full stack developer</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $500</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.5</span>
+                            <span class="d-inline">(120)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-7.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your front end developer</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $50</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.0</span>
+                            <span class="d-inline">(180)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-8.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will create for you a motion graphic video</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $10</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">1.0</span>
+                            <span class="d-inline">(2)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-9.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will help you in marketing</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $5</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">0</span>
+                            <span class="d-inline">(0)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-11.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will do a montage video for you with perfect price</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $29</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">3.1</span>
+                            <span class="d-inline">(50)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-12.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will convert any design to responsive wordpress template</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $15</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">5.0</span>
+                            <span class="d-inline">(160)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-13.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your web designer and front end developer</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $10</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">3.5</span>
+                            <span class="d-inline">(20)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-14.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your PHP and larvel developer</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $100</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">0</span>
+                            <span class="d-inline">(0)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-15.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will fix wordpress and php issues or bugs</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $100</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.9</span>
+                            <span class="d-inline">(17)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-16.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will write html css javaScript jquery bootstrap for you</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $20</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.8</span>
+                            <span class="d-inline">(21)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-17.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will designe for you any logo or banner you want</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $5</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.5</span>
+                            <span class="d-inline">(240)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-18.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your front end and back end developer</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $500</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.0</span>
+                            <span class="d-inline">(50)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-19.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will do you a logo for your youtube channel</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $10</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">0</span>
+                            <span class="d-inline">(0)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-20.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your video editor</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $20</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.5</span>
+                            <span class="d-inline">(110)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-21.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your front end and back end with node.js</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $90</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">5.0</span>
+                            <span class="d-inline">(500)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-22.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will build php mysql website</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $70</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.5</span>
+                            <span class="d-inline">(33)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!--------{ END PROJECTS PREVIEW }---------->
+
+<!--------{ START FOOTER }---------->
+
+    <footer class="footer">
+        <div class="footer-container justify-content-between mt-4">
+            <div class="site-title text-white d-flex">
+                <span>Work</span><span>flow</span>
+                <p class="ml-2">&copy; Workflow international Ltd 2020</p>
+            </div>
+            <div class="site-social-media d-flex">
+                <a href="https://www.twitter.com" class="mr-3"><img src="icons/twitter.png"></a>
+                <a href="https://www.facebook.com" class="mr-3"><img src="icons/face.png"></a>
+                <a href="https://www.linkedin.com" class="mr-3"><img src="icons/linked.png"></a>
+                <a href="https://www.instagram.com" class="mr-3"><img src="icons/insta.png"></a>
+            </div>
+        </div>
+    </footer>
+
+<!--------{ END FOOTER }---------->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="javaScript files/home-page.js"></script>
+</body>
+</html>

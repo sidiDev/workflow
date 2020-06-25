@@ -1,0 +1,451 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #F1F1F1;
+}
+
+/* ========= { START NAVBARE } =========*/
+
+nav .navbar-container {
+    width: 80%;
+}
+
+nav .navbar-brand span {
+    font-weight: 500;
+}
+
+nav .navbar-brand span:first-of-type {
+    color: #41CE44;
+}
+
+.nav-container .search-container {
+    width: 300px;
+}
+
+nav .container .nav-links ul {
+    display: flex;
+}
+
+nav .container .nav-links ul li {
+    margin-left: 20px;
+}
+
+nav .container .nav-links ul li a {
+    color: #555;
+    cursor: pointer;
+}
+
+.fixed-nav {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    top: 0;
+    animation: slide-down 0.7s;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+/* ========= { END NAVBARE } =========*/
+
+/* ========= { START DASHBOARD } =========*/
+
+.dahboard-conainer {
+    margin-top: 7em;
+}
+
+.dahboard-conainer .dahboard {
+    display: grid;
+    grid-gap: 0 20px;
+    align-items: flex-start;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.dahboard-first-part
+.user-profile label {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    display: block;
+}
+
+.dahboard
+.dashboard-column {
+    height: 350px;
+}
+
+
+.delete,
+.user-langauge .delete-lang {
+    position: absolute;
+    top: 0;
+    left: -5em;
+    height: 100%;
+    width: 60px;
+    border-radius: 20px;
+    background: #FFF;
+    transition: .3s;
+}
+
+.edit-title-form,
+.edit-desc-form {
+    position: absolute;
+    background: #FFF;
+    width: 300px;
+    padding: 8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: solid 2px #DDD;
+    z-index: 2;
+}
+
+.edit-desc-form {
+    top: -15px;
+}
+
+.user-langauge .show-lang {
+    transition: .3s;
+    left: 0;
+}
+
+.show {
+    transition: .3s;
+    left: 0;
+}
+
+.remove-add-lang,
+.remove-add-skill {
+    display: none
+}
+
+/* ========= { END DASHBOARD } =========*/
+
+/* ========= { START (LANGUAGES) } =========*/
+
+.expertise .expertise-container {
+    width: 650px;
+    margin: 5em auto;
+}
+
+.expertise .expertise-container
+.expertise-header p {
+    font-size: 26px;
+}
+
+.expertise-body-container
+.dropdowns {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.expertise-body-container
+.dropdowns .hide-dropdown,
+.expertise-body-container
+.dropdowns .hide-add-btn {
+    display: none;
+}
+
+.keyword-item {
+    padding: 0;
+}
+
+.langs-container .langs-details {
+    width: 590px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.langs-container .langs-details
+.lang-speaker {
+    margin: 5px;
+}
+
+.dropdown .dropdown-arrow {
+    position: relative;
+    padding: 10px 30px 10px 30px;
+    border: solid 2px #F1F1F1;
+    box-shadow: 2px -1px 10px 0px #F1F1F1;
+}
+
+.dropdown .dropdown-arrow:after {
+    position: absolute;
+    content: '';
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: transparent transparent #17a2b8 #17a2b8;
+    transform: rotate(-45deg);
+    right: 8px;
+    top: 15px;
+}
+
+/* ========= { END (LANGUAGES) } =========*/
+
+/* ========= { START FIRST STEP (EXPERTISE) } =========*/
+
+.expertise .expertise-container {
+    width: 650px;
+    margin: 5em auto;
+}
+
+.expertise .expertise-container
+.expertise-header p {
+    font-size: 26px;
+}
+
+.dropdown .dropdown-arrow {
+    position: relative;
+    padding: 10px 30px 10px 30px;
+    border: solid 2px #F1F1F1;
+    box-shadow: 2px -1px 10px 0px #F1F1F1;
+}
+
+.dropdown .dropdown-arrow:after {
+    position: absolute;
+    content: '';
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: transparent transparent #17a2b8 #17a2b8;
+    transform: rotate(-45deg);
+    right: 8px;
+    top: 15px;
+}
+
+.options-work-container
+.option-work input {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.options-work-container
+.option-work input::after {
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    left: -22px;
+    top: -13px;
+    border: solid 1px rgb(185, 185, 185);
+    cursor: pointer;
+}
+
+.options-work-container
+.option-work input:checked + label:after {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 11px;
+    left: 3px;
+    top: 6px;
+    border-bottom: 3px solid #17a2b8;
+    border-right: 3px solid #17a2b8;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.category-container
+.options-work-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.expertise-container .expertise-footer {
+    display: flex;
+}
+
+.expertise-container .expertise-footer button:nth-of-type(2) {
+    margin-left: 2em;
+}
+
+.projects-section-container {
+    width: 100%;
+    margin-top: 6em;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.user-project-details .project-title {
+    word-break: break-word;
+}
+
+.projects-section
+.add-projects-section span:first-of-type {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+}
+
+.projects-section
+.add-projects-section span:nth-of-type(2) {
+    cursor: pointer;
+    user-select: none;
+    width: 29px;
+    height: 29px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 20px;
+    box-shadow: 0px 0px 3px 2px rgb(236, 236, 236);
+}
+
+.user-projects {
+    display: grid;
+    grid-gap: 14px 30px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.user-projects
+.user-project-container {
+    position: relative;
+    border: solid 2px #F1F1F1;
+}
+
+.user-projects
+.user-project-container img {
+    width: 100%;
+    height: 190px;
+}
+
+.user-projects
+.user-project-container
+.user-project-details {
+    padding: 0 8px 0 20px;
+    margin-top: auto;
+    margin-bottom: 0 auto;
+}
+
+.user-projects
+.user-project-container
+.user-project-details span:first-of-type {
+    font-weight: 500;
+}
+
+.user-projects
+.user-project-container
+.user-project-details span {
+    display: block;
+    margin-top: 4px;
+}
+
+.user-project-container
+.delete-product-btn {
+    cursor: pointer;
+    user-select: none;
+    width: 29px;
+    height: 29px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 20px;
+    left: 15px;
+    top: 10px;
+    display: none;
+}
+
+.user-projects
+.user-project-container:hover > .delete-product-btn {
+    display: block;
+}
+
+/* ========= { END FIRST STEP (EXPERTISE) } =========*/
+
+.user-desc .user-desc-container {
+    width: 600px;
+    margin: auto;
+}
+
+.input-form label {
+    cursor: pointer;
+    width: 400px;
+    border: solid 2px #F1F1F1;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form span:first-of-type,
+.input-form span:nth-of-type(2) {
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #555;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form input {
+    width: 500px;
+    margin-top: 15px;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form:nth-child(2) span:nth-of-type(2) {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.user-desc-body-container
+.input-form .add-price-form span:not(:nth-of-type(2)) {
+    cursor: pointer;
+    user-select: none;
+    width: 29px;
+    height: 29px;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 20px;
+    box-shadow: 0px 0px 3px 2px rgb(236, 236, 236);
+}
+
+.user-desc-body-container
+.input-form .add-price-form span:nth-of-type(2) {
+    width: 29px;
+    height: 29px;
+}
+
+.user-desc-body-container
+.input-form .dimine {
+    opacity: 0;
+}
+
+.user-desc-body-container
+.input-form .show-dimin-btn {
+    opacity: 2;
+}
+
+/* ========= { START FOOTER } =========*/
+
+footer {
+    background: #567;
+    padding: 15px;
+    margin-top: 5em;
+}
+
+footer .footer-container {
+    display: flex;
+}
+
+footer .footer-container
+.site-title span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer .footer-container
+.site-title span:first-of-type {
+    color: #41CE44;
+}
+
+footer .footer-container 
+.site-social-media img {
+    width: 25px;
+    height: 25px;
+}
+
+/* ========= { END FOOTER } =========*/

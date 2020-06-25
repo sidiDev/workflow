@@ -1,7 +1,5 @@
 // Create object to put image url inside it
-let imgUrlObj = {
-    imageUrl: null
-};
+var imageUrl;
 
 // Get input of uplode element
 let inputUd = document.querySelector('.profile-photo-preview input');
@@ -22,7 +20,7 @@ inputUd.onchange = function() {
             fileReader.addEventListener('load', function() {
     
                 photoPreview.src = this.result;
-                imgUrlObj.imageUrl = `${this.result}`;
+                imageUrl = `${this.result}`;
             })
     
             fileReader.readAsDataURL(files)
@@ -45,9 +43,9 @@ function checkProfilePhoto() {
 
     nextBtn[1].onclick = () => {
 
-        if (imgUrlObj.imageUrl != null) {
+        if (imageUrl != '') {
             location = 'dashboard-page.html';
-            localStorage.setItem('imageUrl',JSON.stringify(imgUrlObj.imageUrl));
+            localStorage.setItem('imageUrl',imageUrl);
 
         } else {
 

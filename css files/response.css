@@ -1,0 +1,613 @@
+/* ========= { START RESPONSE ON SMALL DEVICES } =========*/
+
+@media screen and (min-width: 300px) and (max-width: 550px) {
+
+/* ========= { START NAVBARE } =========*/
+
+nav .nav-container, 
+nav .navbar-container {
+    position: absolute;
+    background: #FFF;
+    top: 3.4em;
+    z-index: 4;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+nav .nav-container {
+    top: 8px;
+    right: 0;
+}
+
+nav .navbar-brand .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-top: 3px;
+    background: #555;
+}
+
+nav .navbar-container {
+    background: #FFF;
+    transition: .3s;
+    width: 100%;
+    height: 0;
+}
+
+.nav-container .nav-links {
+    width: 100%;
+    background: #FFF
+}
+
+nav .container .nav-links ul {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -2em;
+}
+
+nav .container .nav-links ul li {
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.search-container {
+    width: 100%;
+    position: relative;
+    top: -1em;
+    margin: auto;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+.fixed-nav {
+    position: unset;
+    animation: slide 0.7s;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+/* ========= { END NAVBARE } =========*/
+
+/* ========= { START DASHBOARD } =========*/
+
+.dahboard-conainer .dahboard {
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 20px 0;
+}
+
+.dahboard .dashboard-column {
+    width: 100%;
+}
+
+.edit-title-form,
+.edit-desc-form {
+    width: 100%;
+}
+
+.projects-section-container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.user-projects {
+    grid-gap: 20px 0;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.user-projects
+.user-project-container {
+    width: 100%;
+}
+
+
+/* ========= { END DASHBOARD } =========*/
+
+/* ========= { START FOOTER } =========*/
+
+footer .footer-container {
+    display: block
+}
+
+footer .footer-container 
+.site-social-media {
+    justify-content: center;
+}
+
+/* ========= { END FOOTER } =========*/
+
+
+.expertise .expertise-container {
+    width: 100%;
+    margin: 5em auto;
+}
+
+.expertise-body-container
+.dropdowns {
+    display: block;
+}
+
+.dropdowns .dropdown {
+    margin-top: 10px;
+}
+
+.dropdowns .dropdown button,
+.add-button button {
+    width: 200px;
+    margin-top: 5px;
+}
+
+.langs-container .langs-details {
+    width: 200px;
+    display: block;
+}
+
+
+.expertise .expertise-container {
+    width: 100%;
+    margin: 5em auto;
+}
+
+.category-container
+.options-work-container {
+    grid-template-columns: repeat(1,1fr);
+}
+
+.user-desc .user-desc-container {
+    width: 100%;
+}
+
+.input-form label {
+    width: 100%;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form input {
+    width: 95%;
+}
+
+}
+
+@media screen and (min-width: 416px) and (max-width: 550px) {
+
+.user-projects .user-project-container {
+    width: 350px;
+    margin: auto;
+}
+
+.dahboard .dashboard-column {
+    width: 380px;
+}
+
+}
+
+
+@media screen and (min-width: 446px) and (max-width: 678px) {
+
+.expertise .expertise-container {
+    width: 100%;
+    margin: 5em auto;
+}
+
+.expertise-body-container
+.dropdowns {
+    grid-template-columns: repeat(2,1fr);
+}
+
+.dropdowns .dropdown {
+    margin-top: 10px;
+}
+
+.dropdowns .dropdown button,
+.add-button button {
+    width: 200px;
+    margin-top: 5px;
+}
+
+.langs-container .langs-details {
+    width: 90%;
+    display: flex;
+}
+
+}
+
+@media screen and (min-width: 551px) and (max-width: 678px) {
+
+/* ========= { START NAVBARE } =========*/
+
+nav .nav-container, 
+nav .navbar-container {
+    position: absolute;
+    background: #FFF;
+    top: 3.4em;
+    z-index: 4;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+nav .nav-container {
+    top: 8px;
+    right: 0;
+}
+
+nav .navbar-brand .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-top: 3px;
+    background: #555;
+}
+
+nav .navbar-container {
+    background: #FFF;
+    transition: .3s;
+    width: 100%;
+    height: 0;
+}
+
+.nav-container .nav-links {
+    width: 100%;
+    background: #FFF
+}
+
+nav .container .nav-links ul {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -2em;
+}
+
+nav .container .nav-links ul li {
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.search-container {
+    width: 100%;
+    position: relative;
+    top: -1em;
+    margin: auto;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+.fixed-nav {
+    position: unset;
+    animation: slide 0.7s;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+/* ========= { END NAVBARE } =========*/
+
+/* ========= { START DASHBOARD } =========*/
+
+.dahboard-conainer .dahboard {
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 20px 0;
+}
+
+.user-projects .user-project-container {
+    width: 350px;
+    margin: auto;
+}
+
+.dahboard .dashboard-column {
+    width: 390px;
+}
+
+.edit-title-form,
+.edit-desc-form {
+    width: 100%;
+}
+
+.user-projects {
+    grid-gap: 20px 0;
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+/* ========= { END DASHBOARD } =========*/
+
+/* ========= { START FOOTER } =========*/
+
+footer .footer-container {
+    display: block;
+}
+
+.site-title,
+footer .footer-container 
+.site-social-media {
+    justify-content: center;
+}
+
+/* ========= { END FOOTER } =========*/
+
+.user-desc .user-desc-container {
+    width: 100%;
+}
+
+.input-form label {
+    width: 380px;
+}
+
+.user-desc-body-container
+.user-desc-title .input-form input {
+    width: 350px;
+}
+
+}
+
+/* ========= { END RESPONSE ON SMALL DEVICES } =========*/
+
+/* ========= { START RESPONSE ON MEDIAN DEVICES } =========*/
+
+
+@media screen and (min-width: 679px) and (max-width: 758px) {
+
+/* ========= { START NAVBARE } =========*/
+
+nav .nav-container, 
+nav .navbar-container {
+    position: absolute;
+    background: #FFF;
+    top: 3.4em;
+    z-index: 4;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+nav .nav-container {
+    top: 8px;
+    right: 0;
+}
+
+nav .navbar-brand .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-top: 3px;
+    background: #555;
+}
+
+nav .navbar-container {
+    background: #FFF;
+    transition: .3s;
+    width: 100%;
+    height: 0;
+}
+
+.nav-container .nav-links {
+    width: 100%;
+    background: #FFF
+}
+
+nav .container .nav-links ul {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -2em;
+}
+
+nav .container .nav-links ul li {
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.search-container {
+    width: 100%;
+    position: relative;
+    top: -1em;
+    margin: auto;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+.fixed-nav {
+    position: unset;
+    animation: slide 0.7s;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+/* ========= { END NAVBARE } =========*/
+
+/* ========= { START DASHBOARD } =========*/
+
+.dahboard-conainer .dahboard {
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px 5px;
+}
+
+.user-projects .user-project-container {
+    width: 350px;
+    margin: auto;
+}
+
+.dahboard .dashboard-column {
+    width: 320px;
+}
+
+.edit-title-form,
+.edit-desc-form {
+    width: 100%;
+}
+
+.user-projects {
+    grid-gap: 0 5px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.user-projects .user-project-container {
+    width: 310px;
+    margin: auto;
+}
+
+/* ========= { END DASHBOARD } =========*/
+
+/* ========= { START FOOTER } =========*/
+
+footer .footer-container {
+    display: block;
+}
+
+.site-title,
+footer .footer-container 
+.site-social-media {
+    justify-content: center;
+}
+
+/* ========= { END FOOTER } =========*/
+
+}
+
+
+@media screen and (min-width: 759px) and (max-width: 890px) {
+
+/* ========= { START NAVBARE } =========*/
+
+nav .nav-container, 
+nav .navbar-container {
+    position: absolute;
+    background: #FFF;
+    top: 3.4em;
+    z-index: 4;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+nav .nav-container {
+    top: 8px;
+    right: 0;
+}
+
+nav .navbar-brand .menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-top: 3px;
+    background: #555;
+}
+
+nav .navbar-container {
+    background: #FFF;
+    transition: .3s;
+    width: 100%;
+    height: 0;
+}
+
+.nav-container .nav-links {
+    width: 100%;
+    background: #FFF
+}
+
+nav .container .nav-links ul {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -2em;
+}
+
+nav .container .nav-links ul li {
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.search-container {
+    width: 100%;
+    position: relative;
+    top: -1em;
+    margin: auto;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+.fixed-nav {
+    position: unset;
+    animation: slide 0.7s;
+}
+
+nav .open-close-nav {
+    height: 300px;
+    transition: .3s;
+}
+
+/* ========= { END NAVBARE } =========*/
+
+/* ========= { START DASHBOARD } =========*/
+
+.dahboard-conainer .dahboard {
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px 5px;
+}
+
+.dahboard .dashboard-column {
+    width: 350px;
+}
+
+.edit-title-form,
+.edit-desc-form {
+    width: 100%;
+}
+
+.user-projects {
+    grid-gap: 0 5px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.user-projects .user-project-container {
+    width: 350px;
+    margin: auto;
+}
+
+/* ========= { END DASHBOARD } =========*/
+
+}
+
+@media screen and (min-width: 891px) and (max-width: 1341px) {
+
+.user-projects .user-project-container {
+    width: 390px;
+    margin: auto;
+}
+
+.user-projects {
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+/* ========= { END RESPONSE ON MEDIAN DEVICES } =========*/
