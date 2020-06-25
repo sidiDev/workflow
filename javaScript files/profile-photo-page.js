@@ -1,5 +1,5 @@
 // Create object to put image url inside it
-var imageUrl;
+var imageUrl = '';
 
 // Get input of uplode element
 let inputUd = document.querySelector('.profile-photo-preview input');

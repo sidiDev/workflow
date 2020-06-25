@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css files/home.css">
+    <link rel="stylesheet" href="css files/home-page.css">
     <title>workflow</title>
+
 </head>
 <body>
+   
 
 <!--------{ START NAVBARE }---------->
     <nav class="navbar bg-white w-100">
@@ -18,7 +20,7 @@
                 <span></span>
                 <span></span>
             </div>
-            <a href="home.html" class="text-decoration-none text-dark ml-3">
+            <a href="index.html" class="text-decoration-none text-dark ml-3">
                 <span>Work</span><span>flow</span>
             </a>
         </div>
@@ -26,200 +28,413 @@
         <div class="container nav-container">
             <div class="search-container">
                 <div class="input-group">
-                    <input type="text" class="form-control shadow-none" placeholder="Enter your search">
-                    <button class="btn btn-outline-info shadow-none ml-1">Search</button>
+                    <input type="text" class="form-control shadow-none search-input" placeholder="Enter your search">
+                    <button class="btn btn-outline-info shadow-none ml-1 search-button">Search</button>
                 </div>
             </div>
             <div class="nav-links">
                 <ul class="list-inline m-0 p-0">
-                    <li class="nav-item"><a dataset="how-it-work" class="text-decoration-none">How It Works</a></li>
-                    <li class="nav-item"><a dataset="available" class="text-decoration-none">The available</a></li>
-                    <li class="nav-item"><a dataset="explore" class="text-decoration-none">Explore</a></li>
-                    <li class="nav-item"><a href="form.html" class="text-decoration-none">Get started</a></li>
+                    <li class="nav-item"><a href="#" class="text-decoration-none">Home</a></li>
+                    <li class="nav-item"><a href="#" class="text-decoration-none">Inbox</a></li>
+                    <li class="nav-item"><a href="#" class="text-decoration-none">Manage Request</a></li>
+                    <li class="nav-item"><a class="text-decoration-none">Logout</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    </nav>
-<!--------{ START NAVBARE }---------->
-
-<!--------{ START HEADER }---------->
-    <header class="header overflow-hidden">
-        <div class="header-cover"><img src="images/header-img.png" class="h-100 w-100"></div>
-        <div class="header-desc position-relative text-white">
-            <p>Find the perfect freelance services for your business</p>
-            <p>
-                Workflow expertly connects professionals and agencies to <br>
-                businesses seeking specialized talent.
-            </p>
+    <div class="user-profile-photo">
+        <span class="border rounded-circle border d-block" style="width:45px;height:45px;">
+            <img src="" class="w-100 h-100 rounded-circle profile-photo">
+        </span>
+    </div>
+    <div class="navbar-options-container column border-top">
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>            
         </div>
-    </header>
-<!--------{ START HEADER }---------->
-
-<!--------{ START MARKETPLACE }---------->
-    <main class="market-place container-fluid mt-5 overflow-hidden" id="explore">
-        <h4 class="text-center">Explore the marketplace</h4>
-        <div class="marketplace-container mt-5">
-            <div class="card">
-                <img src="icons/web-mobile.svg" class="card-img">
-                <div class="card-title-container bg-white text-center mt-3 rounded-bottom">
-                    <p>Web, Mobile &amp; Software Dev</p>
+        <div class="navbar-options container">
+            <ul>
+                <div class="dropdown column">
+                    <button class="btn border shadow-none dropdown-toggle" data-toggle="dropdown">Service Options</button>
+                <div class="dropdown-menu">
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>                        
                 </div>
-            </div>
-            <div class="card">
-                <img src="icons/design-creative.svg" class="card-img">
-                <div class="card-title-container bg-white text-center mt-3 rounded-bottom">
-                    <p>Design &amp; Creative</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="icons/writing.svg" class="card-img">
-                <div class="card-title-container bg-white text-center mt-3 rounded-bottom">
-                    <p>Writing</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="icons/marketing-sales.svg" class="card-img">
-                <div class="card-title-container bg-white text-center mt-3 rounded-bottom">
-                    <p>Sales &amp; Marketing</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="icons/admin-support.svg" class="card-img">
-                <div class="card-title-container bg-white text-center mt-3 rounded-bottom">
-                    <p>Admin Support</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="icons/customer-service.svg" class="card-img">
-                <div class="card-title-container bg-white text-center mt-3 rounded-bottom">
-                    <p>Customer Service</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="icons/data-science.svg" class="card-img">
-                <div class="card-title-container bg-white text-center mt-3 rounded-bottom">
-                    <p>Data Science &amp; Analytics</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="icons/engineering-architecture.svg" class="card-img">
-                <div class="card-title-container bg-white text-center mt-3 rounded-bottom">
-                    <p>Engineer &amp; Architecture</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-<!--------{ END MARKETPLACE }---------->
-
-<!--------{ START OFER }---------->
-
-    <main class="bg-white mt-5 offer overflow-hidden" id="available">
-        <h4 class="p-4 text-center">Give your business the right tool</h4>
-        <div class="offer-container container-fluid">
-            <div class="offer-img">
-                <img src="icons/ipadX2.gif">
-            </div>
-            <div class="offer-info ml-3">
-
-                <div class="offer-item mt-5">
-                    <div class="offer-item-title">
-                        <span></span><p>Full transparency</p>
-                    </div>
-                    <p>
-                        A new shared dashboard allows you to track your team's activity, so that
-                        everyone is always in sync.
-                    </p>
                 </div>
 
-                <div class="offer-item mt-5">
-                    <div class="offer-item-title">
-                        <span></span><p>VIP customer support</p>
-                    </div>
-                    <p>
-                        Quick response time and upgraded support solutions will help you to get
-                        what you need, when you need it.
-                    </p>
+                <div class="dropdown column">
+                    <button class="btn border shadow-none dropdown-toggle" data-toggle="dropdown">Seller Details</button>
+                <div class="dropdown-menu">
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>                        
                 </div>
-                
-                <div class="offer-item mt-5">
-                    <div class="offer-item-title">
-                        <span></span><p>Improved billing options</p>
-                    </div>
-                    <p>
-                        One team - one payment method. You can now add a card on file that every
-                        team member can use.
-                    </p>
                 </div>
-            </div>
-        </div>
-    </main>
 
-<!--------{ END OFFER }---------->
+                <div class="dropdown column">
+                    <button class="btn border shadow-none dropdown-toggle" data-toggle="dropdown">Delivery Time</button>
+                <div class="dropdown-menu">
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>
+                    <li class="dropdown-item">ABCDEFGHI</li>                        
+                </div>
+                </div>
 
-<!--------{ START TESTIMONIAL }---------->
-
-    <main class="testimonial overflow-hidden" id="how-it-work">
-        <div class="carousel-container">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner carousel-inner-container">
-                    <div class="carousel-item active">
-                        <div class="carousel-item-container">
-                            <div class="carousel-img">
-                                <img src="images/carousel-img-1.png" class="w-100 h-100">
-                            </div>
-                            <div class="carousel-info">
-                                <p>
-                                        When I use Fiverr, I don’t have to go through
-                                        the hassle of contracts, negotiations, logistics
-                                        and financials. Fiverr takes away the risk
-                                        of working with the wrong freelancer."
-                                </p>
-                            </div>
+                <div class="button-active-desactive mt-1 d-flex column">
+                    <div class="position-relative" style="width: 45px">
+                        <div class="active-container">
+                             <span class="active-btn rounded-circle position-absolute"></span>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item-container">
-                            <div class="carousel-img">
-                                <img src="images/carousel-img-2.png" class="w-100 h-100">
-                            </div>
-                            <div class="carousel-info">
-                                <p>
-                                    Being a small but growing brand, we have to
-                                    definitely do a lot more with less. And when you
-                                    want to create a business bigger than yourself,
-                                    you’re going to need help. And that’s what Fiverr does
-                                </p>
-                            </div>
+                    <span style="color: #555;font-weight:500">Online Sellers</span>
+                </div>
+
+                <div class="button-active-desactive mt-1 d-flex column">
+                    <div class="position-relative" style="width: 45px">
+                        <div class="active-container">
+                             <span class="active-btn rounded-circle position-absolute"></span>
                         </div>
                     </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-            </div>
-        </div>
-    </main>
+                    <span style="color: #555;font-weight:500">Pro Services</span>
+                </div>
 
-<!--------{ END TESTIMONIAL }---------->
-
-<!--------{ START GET STARTED }---------->
-
-    <div class="login mt-4 w-100 position-relative bg-white">
-        <div class="login-container">
-            <h4>Find freelance services for your business today</h4>
-            <p>We've got you covered for all your business needs</p>
-            <a href="form.html">
-                <button class="btn btn-info">Get started</button>
-            </a>
+            </ul>
         </div>
     </div>
+    </nav>
 
-<!--------{ END GET STARTED }---------->
+<!--------{ END NAVBARE }---------->
+
+<!--------{ START PROJECTS PREVIEW }---------->
+
+    <main class="projects-section-container">
+        <div class="projects-section bg-white p-3">
+            <span class="mt-3 d-block services-available" style="color: #555;font-size: 17px;font-weight:500"></span>
+            <div class="projects mt-3">
+                <div class="project-container">
+                        <img src="images/img-1.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will do python bots scraper automatorrs and more</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $50</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">2.5</span>
+                            <span class="d-inline">(50)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-2.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your designer and Full stack developer</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $500</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.5</span>
+                            <span class="d-inline">(120)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-3.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">Create a professional website for you with html and Css and js</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $100</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.2</span>
+                            <span class="d-inline">(120)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-4.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will design you a logo or banner for your youtube channel or FB page</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $10</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">5.0</span>
+                            <span class="d-inline">(620)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-5.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be help your business to expand your activity</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $90</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">2.5</span>
+                            <span class="d-inline">(25)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-6.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your designer and Full stack developer</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $500</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.5</span>
+                            <span class="d-inline">(120)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-7.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your front end developer</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $50</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.0</span>
+                            <span class="d-inline">(180)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-8.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will create for you a motion graphic video</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $10</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">1.0</span>
+                            <span class="d-inline">(2)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-9.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will help you in marketing</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $5</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">0</span>
+                            <span class="d-inline">(0)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-11.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will do a montage video for you with perfect price</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $29</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">3.1</span>
+                            <span class="d-inline">(50)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-12.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will convert any design to responsive wordpress template</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $15</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">5.0</span>
+                            <span class="d-inline">(160)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-13.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your web designer and front end developer</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $10</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">3.5</span>
+                            <span class="d-inline">(20)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-14.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your PHP and larvel developer</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $100</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">0</span>
+                            <span class="d-inline">(0)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-15.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will fix wordpress and php issues or bugs</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $100</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.9</span>
+                            <span class="d-inline">(17)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-16.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will write html css javaScript jquery bootstrap for you</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $20</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.8</span>
+                            <span class="d-inline">(21)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-17.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will designe for you any logo or banner you want</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $5</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.5</span>
+                            <span class="d-inline">(240)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-18.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your front end and back end developer</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $500</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.0</span>
+                            <span class="d-inline">(50)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-19.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will do you a logo for your youtube channel</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $10</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">0</span>
+                            <span class="d-inline">(0)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-20.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your video editor</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $20</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.5</span>
+                            <span class="d-inline">(110)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-21.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will be your front end and back end with node.js</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $90</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">5.0</span>
+                            <span class="d-inline">(500)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                        <img src="images/img-22.png">
+                        <div class="project-details">
+                            <span class="project-title d-block" style="height: 50px;">I will build php mysql website</span>
+                            <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                            <span class="d-block" style="font-weight: 500">Price: $70</span>
+                            <div>
+                            <img src="icons/star.png" style="width:18px;height:18px;margin-top:-7px">
+                            <span class="d-inline" style="color:#ffc201">4.5</span>
+                            <span class="d-inline">(33)</span>
+                        </div>                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!--------{ END PROJECTS PREVIEW }---------->
 
 <!--------{ START FOOTER }---------->
 
@@ -238,11 +453,11 @@
         </div>
     </footer>
 
-<!--------{ START FOOTER }---------->
+<!--------{ END FOOTER }---------->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="javaScript files/home.js"></script>
+<script src="javaScript files/home-page.js"></script>
 </body>
 </html>
