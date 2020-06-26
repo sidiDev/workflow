@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background: #F1F1F1;
+    word-wrap: break-word;
 }
 
 /* ========= { START NAVBARE } =========*/
@@ -132,7 +133,7 @@ nav .container .nav-links ul li a {
 
 .expertise .expertise-container {
     width: 650px;
-    margin: 5em auto;
+    margin: 10px auto;
 }
 
 .expertise .expertise-container
@@ -192,7 +193,7 @@ nav .container .nav-links ul li a {
 
 .expertise .expertise-container {
     width: 650px;
-    margin: 5em auto;
+    margin: 10px auto;
 }
 
 .expertise .expertise-container
