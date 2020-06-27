@@ -80,13 +80,19 @@ nav .open-close-nav {
 
 /* ========= { START DASHBOARD } =========*/
 
+.dahboard-conainer {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .dahboard-conainer .dahboard {
     grid-template-columns: repeat(1,1fr);
     grid-gap: 20px 0;
 }
 
 .dahboard .dashboard-column {
-    width: 100%;
+    width: 290px;
 }
 
 .edit-title-form,
