@@ -85,30 +85,46 @@ let projectsTitles = document.querySelectorAll('.project-title');
 // Get all products element
 let productsItems = document.querySelectorAll('.projects .project-container');
 
-servicesAvailable.innerHTML = `${projectsTitles.length} Services available`
+servicesAvailable.innerHTML = `${projectsTitles.length} Services available`;
+getProjects = JSON.parse(getProjects);
 
     searchBtn.onclick = () => {
 
         let numOfSeviceAl = [];
+        projectsContainer.innerHTML = '';
     
         if (searchInput.value.length > 2) {
     
             let searchValue = searchInput.value.toLowerCase();
             
-            for (let i = 0; i < projectsTitles.length; i++) {
-    
-                let projects_titles = projectsTitles[i].textContent.toLowerCase();
-    
-                if (projects_titles.includes(searchValue) == true) {
+            for (let i = 0; i < getProjects.length; i++) {
+                
+                let title = getProjects[i].title;
+                let productsImg = getProjects[i].img;
+                let prizing = getProjects[i].prizing;
+                let price = getProjects[i].price;
+                let startImg = getProjects[i].startImg;
+
+                if (title.includes(searchValue) == true) {
 
                     numOfSeviceAl.push(i);
-                    projectsTitles[i].parentElement.parentElement.classList.add('d-block');
+                    projectsContainer.innerHTML += `
+                    <div class="project-container">
+                    <img src="${productsImg}">
+                    <div class="project-details">
+                        <span class="project-title d-block" style="height: 50px;">${title}</span>
+                        <div class="price-details mt-2 d-flex justify-content-between" style="border-top: 2px solid #f1f1f1;padding:5px">
+                        <span class="d-block" style="font-weight: 500">${price}</span>
+                        <div>
+                        <img src="${startImg}" style="width:18px;height:18px;margin-top:-7px">
+                        <span class="d-inline" style="color:#ffc201">${prizing}</span>
+                        <span class="d-inline">(50)</span>
+                    </div>                     
+                    </div>
+                </div>
+            </div>
+                    `;
                     servicesAvailable.innerHTML = `${numOfSeviceAl.length} Services available`;
-                    
-                } else {
-
-                    projectsTitles[i].parentElement.parentElement.classList.add('d-none');
-
                 }
             }
         }
@@ -152,6 +168,38 @@ if (getUserProjects) {
 
     }
 
+}
+
+var getProjects = localStorage.getItem('projectsDetails');
+
+let projectArray = [];
+
+if (getProjects == null) {
+
+    getProjects = JSON.parse(getProjects);
+
+    let productsItems = document.querySelectorAll('.projects .project-container');
+    
+    for (let i = 0; i < productsItems.length; i++) {
+
+        let img = productsItems[i].childNodes[1].src;
+        let title = productsItems[i].childNodes[3].childNodes[1].textContent;
+        let price = productsItems[i].childNodes[3].childNodes[3].childNodes[1].textContent;
+        let startImg = productsItems[i].childNodes[3].childNodes[3].childNodes[3].childNodes[1].src;
+        let prizing = productsItems[i].childNodes[3].childNodes[3].childNodes[3].childNodes[5].textContent;
+
+        let productObj = {
+            img: img,
+            title: title,
+            price: price,
+            startImg: startImg,
+            prizing: prizing
+        };
+
+        projectArray.push(productObj)
+
+        localStorage.setItem('projectsDetails',JSON.stringify(projectArray));
+    }
 }
 
 searchFunc()
