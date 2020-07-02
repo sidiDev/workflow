@@ -87,13 +87,26 @@ let productsItems = document.querySelectorAll('.projects .project-container');
 
 servicesAvailable.innerHTML = `${projectsTitles.length} Services available`;
 getProjects = JSON.parse(getProjects);
+let searchBar = document.querySelector('.search-bar');
 
     searchBtn.onclick = () => {
 
-        let numOfSeviceAl = [];
-        projectsContainer.innerHTML = '';
+        searchBar.classList.remove('d-none');
+        searchBar.childNodes[1].classList.add('moving-bar');
+        navContainer.classList.remove('open-close-nav');
+        navContainer_2.classList.remove('open-close-nav');  
+
+        setTimeout(function() {
+
+        searchBar.classList.add('d-none')
+        searchBar.childNodes[1].classList.remove('moving-bar')
     
         if (searchInput.value.length > 2) {
+
+            let numOfSeviceAl = [];
+            projectsContainer.innerHTML = '';
+            servicesAvailable.innerHTML = `0 No services available`;
+            document.querySelector('footer').classList.add('d-none')            
     
             let searchValue = searchInput.value.toLowerCase();
             
@@ -107,6 +120,7 @@ getProjects = JSON.parse(getProjects);
 
                 if (title.includes(searchValue) == true) {
 
+                    document.querySelector('footer').classList.remove('d-none')                    
                     numOfSeviceAl.push(i);
                     projectsContainer.innerHTML += `
                     <div class="project-container">
@@ -128,6 +142,8 @@ getProjects = JSON.parse(getProjects);
                 }
             }
         }
+
+        },2000)
     }
     
 }
